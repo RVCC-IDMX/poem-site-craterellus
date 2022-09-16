@@ -1,16 +1,63 @@
 /* home */
-@use "../abstracts/variables" as var;
-@use "../base/typography" as type;
-
 body {
-  font-family: type.$font;
-  background-color: var.$bg-very-light;
-  width: min(100% - 4rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+  background-color: rgb(187, 166, 126);
+  font-family: 'Nanum Myeongjo', serif;
+  color: #263117;
+  padding: 1rem;
 }
 
 h1 {
-  color: var.$primary-color;
-  text-align:left;
+  /*font-size: clamp(1.2rem, calc(1rem + 5vw), 10rem);*/
+  font-size: min(calc(1rem + 5vw), 3.7em);
+}
+h2 {
+  font-size: min(calc(1rem + 1vw), 50px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  width: 85vw;
+  margin: auto;
+  max-width: 600px;
+}
+
+.poem {
+  font-size: clamp(1rem, 4vw, 1.8rem);
+  margin: auto;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+footer {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  color: #5a3d0e;
+  max-width: fit-content;
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 800px;
+    padding-top: 20px;
+  }
+
+  .header-title {
+    grid-column-start: 1;
+    padding: 10px 30px;
+    width: 300px;
+  }
+
+  img {
+    grid-column-start: 2;
+  }
+
+  /*grid for (h1 h2) and img/*
+
+  /*2 columns*/
 }
