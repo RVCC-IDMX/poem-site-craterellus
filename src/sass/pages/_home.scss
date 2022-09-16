@@ -5,12 +5,12 @@
 body {
   font-family: type.$font;
   background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
+  width: min(100% - 4rem, 60ch);
   margin-inline: auto;
   margin-block: 4rem;
 }
 
 h1 {
   color: var.$primary-color;
-  text-align: center;
+  text-align:left;
 }
